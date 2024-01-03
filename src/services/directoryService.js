@@ -7,7 +7,7 @@ function getDirectoriesInfo(directoryPath) {
     .readdirSync(directoryPath, { withFileTypes: true })
     .map((dirent) => {
       const fullPath = path.join(directoryPath, dirent.name);
-      //   console.log(fullPath, "what is this");
+      //   console.log(fullPath);
       const stats = fs.statSync(fullPath);
       //   console.log(stats);
 
